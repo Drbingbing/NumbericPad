@@ -6,20 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44D00BBD2E7D3236004EC4AA /* libKeyboards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D00BB12E7D313E004EC4AA /* libKeyboards.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D00BBE2E7D3236004EC4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D00B522E7CF3E4004EC4AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D00BB02E7D313E004EC4AA;
+			remoteInfo = Keyboards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44D00BAF2E7D313E004EC4AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		44D00B5A2E7CF3E4004EC4AA /* NumbericPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumbericPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D00B5A2E7CF3E4004EC4AA /* NumericPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumericPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D00BB12E7D313E004EC4AA /* libKeyboards.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeyboards.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		44D00B5C2E7CF3E4004EC4AA /* NumbericPad */ = {
+		44D00B5C2E7CF3E4004EC4AA /* NumericPad */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NumbericPad;
+			path = NumericPad;
+			sourceTree = "<group>";
+		};
+		44D00BB22E7D313E004EC4AA /* Keyboards */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Keyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		44D00B572E7CF3E4004EC4AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D00BBD2E7D3236004EC4AA /* libKeyboards.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D00BAE2E7D313E004EC4AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +72,9 @@
 		44D00B512E7CF3E4004EC4AA = {
 			isa = PBXGroup;
 			children = (
-				44D00B5C2E7CF3E4004EC4AA /* NumbericPad */,
+				44D00B5C2E7CF3E4004EC4AA /* NumericPad */,
+				44D00BB22E7D313E004EC4AA /* Keyboards */,
+				44D00BBC2E7D3236004EC4AA /* Frameworks */,
 				44D00B5B2E7CF3E4004EC4AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,17 +82,25 @@
 		44D00B5B2E7CF3E4004EC4AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44D00B5A2E7CF3E4004EC4AA /* NumbericPad.app */,
+				44D00B5A2E7CF3E4004EC4AA /* NumericPad.app */,
+				44D00BB12E7D313E004EC4AA /* libKeyboards.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		44D00BBC2E7D3236004EC4AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44D00B592E7CF3E4004EC4AA /* NumbericPad */ = {
+		44D00B592E7CF3E4004EC4AA /* NumericPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44D00B652E7CF3E5004EC4AA /* Build configuration list for PBXNativeTarget "NumbericPad" */;
+			buildConfigurationList = 44D00B652E7CF3E5004EC4AA /* Build configuration list for PBXNativeTarget "NumericPad" */;
 			buildPhases = (
 				44D00B562E7CF3E4004EC4AA /* Sources */,
 				44D00B572E7CF3E4004EC4AA /* Frameworks */,
@@ -59,16 +109,39 @@
 			buildRules = (
 			);
 			dependencies = (
+				44D00BBF2E7D3236004EC4AA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				44D00B5C2E7CF3E4004EC4AA /* NumbericPad */,
+				44D00B5C2E7CF3E4004EC4AA /* NumericPad */,
 			);
-			name = NumbericPad;
+			name = NumericPad;
 			packageProductDependencies = (
 			);
 			productName = NumbericPad;
-			productReference = 44D00B5A2E7CF3E4004EC4AA /* NumbericPad.app */;
+			productReference = 44D00B5A2E7CF3E4004EC4AA /* NumericPad.app */;
 			productType = "com.apple.product-type.application";
+		};
+		44D00BB02E7D313E004EC4AA /* Keyboards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D00BB52E7D313E004EC4AA /* Build configuration list for PBXNativeTarget "Keyboards" */;
+			buildPhases = (
+				44D00BAD2E7D313E004EC4AA /* Sources */,
+				44D00BAE2E7D313E004EC4AA /* Frameworks */,
+				44D00BAF2E7D313E004EC4AA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				44D00BB22E7D313E004EC4AA /* Keyboards */,
+			);
+			name = Keyboards;
+			packageProductDependencies = (
+			);
+			productName = Keyboards;
+			productReference = 44D00BB12E7D313E004EC4AA /* libKeyboards.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,9 +156,13 @@
 					44D00B592E7CF3E4004EC4AA = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					44D00BB02E7D313E004EC4AA = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+					};
 				};
 			};
-			buildConfigurationList = 44D00B552E7CF3E4004EC4AA /* Build configuration list for PBXProject "NumbericPad" */;
+			buildConfigurationList = 44D00B552E7CF3E4004EC4AA /* Build configuration list for PBXProject "NumericPad" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +176,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44D00B592E7CF3E4004EC4AA /* NumbericPad */,
+				44D00B592E7CF3E4004EC4AA /* NumericPad */,
+				44D00BB02E7D313E004EC4AA /* Keyboards */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +200,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44D00BAD2E7D313E004EC4AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D00BBF2E7D3236004EC4AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D00BB02E7D313E004EC4AA /* Keyboards */;
+			targetProxy = 44D00BBE2E7D3236004EC4AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		44D00B632E7CF3E5004EC4AA /* Debug */ = {
@@ -298,10 +391,39 @@
 			};
 			name = Release;
 		};
+		44D00BB62E7D313E004EC4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Keyboards/Keyboards-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D00BB72E7D313E004EC4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Keyboards/Keyboards-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44D00B552E7CF3E4004EC4AA /* Build configuration list for PBXProject "NumbericPad" */ = {
+		44D00B552E7CF3E4004EC4AA /* Build configuration list for PBXProject "NumericPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44D00B632E7CF3E5004EC4AA /* Debug */,
@@ -310,11 +432,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44D00B652E7CF3E5004EC4AA /* Build configuration list for PBXNativeTarget "NumbericPad" */ = {
+		44D00B652E7CF3E5004EC4AA /* Build configuration list for PBXNativeTarget "NumericPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44D00B662E7CF3E5004EC4AA /* Debug */,
 				44D00B672E7CF3E5004EC4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D00BB52E7D313E004EC4AA /* Build configuration list for PBXNativeTarget "Keyboards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D00BB62E7D313E004EC4AA /* Debug */,
+				44D00BB72E7D313E004EC4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

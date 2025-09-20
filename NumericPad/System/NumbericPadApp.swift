@@ -1,6 +1,6 @@
 //
-//  NumbericPadApp.swift
-//  NumbericPad
+//  NumericPadApp.swift
+//  NumericPad
 //
 //  Created by BingBing on 2025/9/19.
 //
